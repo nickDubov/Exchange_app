@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeActivity">
+
+    <TextView
+        android:id="@+id/getNum"
+        android:layout_width="144dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toCurrImage" />
+
+    <ImageView
+        android:id="@+id/fromCurImage"
+        android:layout_width="106dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icons8_israel_50" />
+
+    <ImageView
+        android:id="@+id/toCurrImage"
+        android:layout_width="106dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars[0]" />
+
+    <EditText
+        android:id="@+id/setNum"
+        android:layout_width="144dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromCurImage" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="31dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:text="To:"
+        app:layout_constraintEnd_toStartOf="@+id/getNum"
+        app:layout_constraintStart_toEndOf="@+id/setNum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="87dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="56dp"
+        android:text="Close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getNum" />
+
+    <TextView
+        android:id="@+id/country1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Israel"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromCurImage" />
+
+    <TextView
+        android:id="@+id/country2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toCurrImage" />
+
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:text="Exchange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getNum" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="59dp"
+        android:text="Share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getNum" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="87dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="240dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setNum" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_changeContentFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:src="@drawable/replace_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
